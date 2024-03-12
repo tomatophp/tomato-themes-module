@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
 use Modules\TomatoThemes\App\Facades\TomatoThemes;
 use Modules\TomatoThemes\App\Services\Theme;
 use Modules\TomatoThemes\App\Views\BuilderToolbar;
-use TomatoPHP\LaravelTomato\Services\Contracts\Menu;
+use TomatoPHP\TomatoAdmin\Services\Contracts\Menu;
 use TomatoPHP\TomatoAdmin\Facade\TomatoMenu;
 
 include __DIR__.'/helpers.php';
