@@ -27,7 +27,6 @@
     "github": "https:\/\/github.com\/tomatophp\/tomato-themes-module",
     "docs": "https:\/\/docs.tomatophp.com\/plugins\/tomato-themes",
     "required": [
-        "TomatoSections",
         "TomatoSettings"
     ],
     "active": false
