@@ -13,49 +13,49 @@
         <x-splade-form :default="$default" method="POST" action="{{route('admin.themes.custom.save', $theme['name'])}}">
             <div class="flex flex-col space-y-4">
                 <div>
-                    <x-tomato-color name="theme_main_color" label="Theme Main Color" />
+                    <x-tomato-color name="theme_main_color" label="{{ __('Theme Main Color') }}" />
                     <div class="p-1">
                         <small class="text-red-500"><code>theme_setting('main_color')</code></small>
                     </div>
                 </div>
                 <div>
-                    <x-tomato-color name="theme_secandry_color" label="Theme Secondary Color" />
+                    <x-tomato-color name="theme_secandry_color" label="{{ __('Theme Secondary Color') }}" />
                     <div class="p-1">
                         <small class="text-red-500"><code>theme_setting('secandry_color')</code></small>
                     </div>
                 </div>
                 <div>
-                    <x-tomato-color name="theme_sub_color" label="Theme Sub Color" />
+                    <x-tomato-color name="theme_sub_color" label="{{ __('Theme Sub Color') }}" />
                     <div class="p-1">
                         <small class="text-red-500"><code>theme_setting('sub_color')</code></small>
                     </div>
                 </div>
                 <div>
-                    <x-tomato-code name="theme_header" label="Theme Header" />
+                    <x-tomato-code name="theme_header" label="{{ __('Theme Header') }}" />
                     <div class="p-1">
                         <small class="text-red-500"><code>theme_setting('header')</code></small>
                     </div>
                 </div>
                 <div>
-                    <x-tomato-code name="theme_footer" label="Theme Footer" />
+                    <x-tomato-code name="theme_footer" label="{{ __('Theme Footer') }}" />
                     <div class="p-1">
                         <small class="text-red-500"><code>theme_setting('footer')</code></small>
                     </div>
                 </div>
                 <div>
-                    <x-tomato-code name="theme_css" label="Theme CSS" />
+                    <x-tomato-code name="theme_css" label="{{ __('Theme CSS') }}" />
                     <div class="p-1">
                         <small class="text-red-500"><code>theme_setting('css')</code></small>
                     </div>
                 </div>
                 <div>
-                    <x-tomato-code name="theme_js" label="Theme JS" />
+                    <x-tomato-code name="theme_js" label="{{ __('Theme JS') }}" />
                     <div class="p-1">
                         <small class="text-red-500"><code>theme_setting('js')</code></small>
                     </div>
                 </div>
                 <div>
-                    <x-splade-input name="theme_copyright" label="Theme Copyright"/>
+                    <x-splade-input name="theme_copyright" label="{{ __('Theme Copyright') }}"/>
                     <div class="p-1">
                         <small class="text-red-500"><code>theme_setting('copyright')</code></small>
                     </div>
@@ -63,7 +63,7 @@
                 @if(count((array)$theme['info']->settings))
                 <hr>
                 <div>
-                    <h1 class="font-bold">Special Theme Setting Variables</h1>
+                    <h1 class="font-bold">{{ __('Special Theme Setting Variables') }}</h1>
                 </div>
                 <hr>
                 @endif
@@ -84,7 +84,7 @@
                         </div>
                     @endif
                 @endforeach
-                <x-splade-submit>Save</x-splade-submit>
+                <x-splade-submit>{{ __('Save') }}</x-splade-submit>
             </div>
         </x-splade-form>
     </div>

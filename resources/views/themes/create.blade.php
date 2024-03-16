@@ -7,8 +7,8 @@
 
     <x-splade-form  method="POST" action="{{route('admin.themes.store')}}">
         <div class="flex flex-col space-y-4">
-            <x-splade-input name="name" label="Theme Name" placeholder="Theme Name" />
-            <x-splade-textarea name="description" label="Theme Description" placeholder="Theme Description" />
+            <x-splade-input name="name" label="{{ __('Theme Name') }}" placeholder="{{ __('Theme Name') }}" />
+            <x-splade-textarea name="description" label="{{ __('Theme Description') }}" placeholder="{{ __('Theme Description') }}" />
 
             <div class="flex justifiy-start gap-4">
                 <x-tomato-admin-submit label="{{__('Create Theme')}}" spinner/>

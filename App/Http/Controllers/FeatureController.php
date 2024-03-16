@@ -70,7 +70,7 @@ class FeatureController extends Controller
                 'icon_color' => 'nullable|max:255',
                 'icon_bg_color' => 'nullable|max:255'
             ],
-            message: __('Feature updated successfully'),
+            message: __('Feature created successfully'),
             redirect: 'admin.features.index',
         );
 

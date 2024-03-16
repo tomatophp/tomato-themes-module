@@ -40,7 +40,7 @@ class TomatoThemesServiceProvider extends ServiceProvider
         TomatoMenu::register([
             Menu::make()
                 ->group(__('Themes'))
-                ->label(trans('tomato-themes::messages.title'))
+                ->label(__('Themes'))
                 ->icon("bx bxs-brush")
                 ->route("admin.themes.index"),
             Menu::make()
