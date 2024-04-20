@@ -37,10 +37,17 @@ class TomatoThemesServiceProvider extends ServiceProvider
             __DIR__.'/../../resources/lang' => base_path('lang/vendor/tomato-themes'),
         ], 'tomato-themes-lang');
 
+        //Register generate command
+        $this->commands([
+            \Modules\TomatoThemes\App\Console\TomatoSectionGenerator::class,
+            \Modules\TomatoThemes\App\Console\TomatoThemesGenerate::class,
+            \Modules\TomatoThemes\App\Console\TomatoThemesInstall::class,
+        ]);
+
         TomatoMenu::register([
             Menu::make()
                 ->group(__('Themes'))
-                ->label(trans('tomato-themes::messages.title'))
+                ->label(__('Themes'))
                 ->icon("bx bxs-brush")
                 ->route("admin.themes.index"),
             Menu::make()
